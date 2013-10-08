@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBC.Search", "..\GBC.CMS\GB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBC", "..\GBC.Common\GBC\GBC.csproj", "{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lynicon", "..\Lynicon\Lynicon.csproj", "{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,14 @@ Global
 		{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}.QA|Any CPU.Build.0 = QA|Any CPU
 		{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Prod|Any CPU.ActiveCfg = Release|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Prod|Any CPU.Build.0 = Release|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.QA|Any CPU.Build.0 = Release|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
