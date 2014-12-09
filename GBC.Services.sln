@@ -1,15 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBC.Search", "..\GBC.CMS\GBC.Search\GBC.Search.csproj", "{5E659654-93F3-4BB9-92D1-D73EA9465ECE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GBC", "..\GBC.Common\GBC\GBC.csproj", "{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lynicon", "..\Lynicon\Lynicon.csproj", "{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lynicon", "..\Lynicon\Lynicon.Core\Lynicon.csproj", "{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lynicon.Base", "..\Lynicon\Lynicon.Base\Lynicon.Base.csproj", "{47A2D927-CF55-4185-8125-9740736299DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		ForServices|Any CPU = ForServices|Any CPU
 		Prod|Any CPU = Prod|Any CPU
 		QA|Any CPU = QA|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -17,6 +22,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5E659654-93F3-4BB9-92D1-D73EA9465ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5E659654-93F3-4BB9-92D1-D73EA9465ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E659654-93F3-4BB9-92D1-D73EA9465ECE}.ForServices|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E659654-93F3-4BB9-92D1-D73EA9465ECE}.ForServices|Any CPU.Build.0 = Debug|Any CPU
 		{5E659654-93F3-4BB9-92D1-D73EA9465ECE}.Prod|Any CPU.ActiveCfg = Release|Any CPU
 		{5E659654-93F3-4BB9-92D1-D73EA9465ECE}.Prod|Any CPU.Build.0 = Release|Any CPU
 		{5E659654-93F3-4BB9-92D1-D73EA9465ECE}.QA|Any CPU.ActiveCfg = Release|Any CPU
@@ -25,6 +32,8 @@ Global
 		{5E659654-93F3-4BB9-92D1-D73EA9465ECE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}.ForServices|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}.ForServices|Any CPU.Build.0 = Debug|Any CPU
 		{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}.Prod|Any CPU.ActiveCfg = Prod|Any CPU
 		{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}.Prod|Any CPU.Build.0 = Prod|Any CPU
 		{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}.QA|Any CPU.ActiveCfg = QA|Any CPU
@@ -33,12 +42,24 @@ Global
 		{9C040CBD-BFE8-4BF4-98C7-B0D41FD011A4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Prod|Any CPU.ActiveCfg = Release|Any CPU
-		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Prod|Any CPU.Build.0 = Release|Any CPU
-		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.QA|Any CPU.ActiveCfg = Release|Any CPU
-		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.QA|Any CPU.Build.0 = Release|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.ForServices|Any CPU.ActiveCfg = ForServices|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.ForServices|Any CPU.Build.0 = ForServices|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Prod|Any CPU.ActiveCfg = ForServices|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Prod|Any CPU.Build.0 = ForServices|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.QA|Any CPU.ActiveCfg = ForServices|Any CPU
+		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.QA|Any CPU.Build.0 = ForServices|Any CPU
 		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9FB7EA1-57D4-49D0-9776-A7A7A8E23475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47A2D927-CF55-4185-8125-9740736299DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47A2D927-CF55-4185-8125-9740736299DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47A2D927-CF55-4185-8125-9740736299DD}.ForServices|Any CPU.ActiveCfg = Release|Any CPU
+		{47A2D927-CF55-4185-8125-9740736299DD}.ForServices|Any CPU.Build.0 = Release|Any CPU
+		{47A2D927-CF55-4185-8125-9740736299DD}.Prod|Any CPU.ActiveCfg = Release|Any CPU
+		{47A2D927-CF55-4185-8125-9740736299DD}.Prod|Any CPU.Build.0 = Release|Any CPU
+		{47A2D927-CF55-4185-8125-9740736299DD}.QA|Any CPU.ActiveCfg = Release|Any CPU
+		{47A2D927-CF55-4185-8125-9740736299DD}.QA|Any CPU.Build.0 = Release|Any CPU
+		{47A2D927-CF55-4185-8125-9740736299DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47A2D927-CF55-4185-8125-9740736299DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
